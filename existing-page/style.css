@@ -63,7 +63,7 @@ footer {
 
 .wrapper {
   --inline-padding: var(--token-spacing-sm);
-  --max-width: 62.5rem;
+  --max-width: 75em;
   inline-size: min(100% - (var(--inline-padding) * 2), var(--max-width));
   margin-inline: auto;
 }
