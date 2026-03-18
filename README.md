@@ -32,12 +32,13 @@ If you create a free Figma account, you’ll have access to export assets and
 inspect details in the mockup.
 
 For this exercise we are just interested in replicating the visual appearance
-of the mockup—**no functionality is required**. Use appropriate React
-components, HTML elements and CSS. For your implementation, divide the page
-into logical React components. [Widely available baseline support](https://web-platform-dx.github.io/web-features/)
-is expected.
+of the mockup—**no functionality is required**. [Widely available baseline support](https://web-platform-dx.github.io/web-features/) is expected.
 
 A basic responsive template is included in the project to get you started.
+
+If you are comfortable with React and Typescript, you can split the page into components, but this is not a requirement.
+
+If you would prefer a JavaScript version of this exercise, please let us know.
 
 ### Running and Testing the New Page
 
