@@ -23,6 +23,9 @@
 }
 
 body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--token-color-neutral-light);
   color: var(--token-color-neutral-dark);
   font-family: var(--token-font-family-system);
@@ -48,6 +51,7 @@ aside {
 }
 
 footer {
+  margin-block-start: auto;
   padding-block: var(--fluid-spacing);
   background-color: var(--token-color-neutral-dark);
   color: var(--token-color-neutral-light);
