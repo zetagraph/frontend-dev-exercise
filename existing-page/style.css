@@ -88,7 +88,8 @@ footer {
   }
 }
 
-@media (width > 37.5em) {
+/* Breakpoint at 900px = 56.25em to */
+@media (width > 56.25em) {
   /* Page Layout */
   .layout {
     display: grid;
