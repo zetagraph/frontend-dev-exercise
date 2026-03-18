@@ -89,6 +89,23 @@ footer {
 }
 
 @media (width > 37.5em) {
+  /* Page Layout */
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(500px, 1fr) minmax(300px, 320px);
+    align-items: start;
+    gap: var(--token-spacing-lg);
+    padding: var(--token-spacing-lg) 0;
+  }
+
+  main {
+    min-width: 0;
+  }
+
+  aside {
+    min-width: 300px;
+  }
+
   .section {
     display: flex;
     gap: var(--token-spacing-lg);
