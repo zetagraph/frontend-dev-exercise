@@ -36,8 +36,9 @@ of the mockup—**no functionality is required**. [Widely available baseline sup
 
 A basic responsive template is included in the project to get you started.
 
-If you are comfortable with React and Typescript, you can split the page into components, but
-this is not a requirement.
+If you are comfortable with React and Typescript, you can split the page into components, but this is not a requirement.
+
+If you would prefer a JavaScript version of this exercise, please let us know.
 
 ### Running and Testing the New Page
 
