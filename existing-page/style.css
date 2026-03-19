@@ -33,11 +33,9 @@ body {
   line-height: 1.5;
 }
 
-main,
-aside,
-footer {
-  margin-block-start: var(--fluid-spacing);
-}
+body > * + * {
+   margin-block-start: var(--fluid-spacing);
+ }
 
 details {
   --stack-spacing: var(--token-spacing-sm);
@@ -66,6 +64,10 @@ footer {
   --max-width: 75em;
   inline-size: min(100% - (var(--inline-padding) * 2), var(--max-width));
   margin-inline: auto;
+}
+
+.section {
+  margin-block-start: var(--token-spacing-sm);
 }
 
 .title {
