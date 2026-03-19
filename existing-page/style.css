@@ -46,6 +46,7 @@ aside {
   padding: var(--fluid-spacing);
   border: 2px solid black;
   background-color: var(--token-color-neutral-mid);
+  margin-block: var(--fluid-spacing);
 }
 
 footer {
@@ -165,6 +166,7 @@ footer {
 
   aside {
     min-width: 300px;
+    margin-block: 0;
   }
 
   /* Uncomment .section for better content flow */
