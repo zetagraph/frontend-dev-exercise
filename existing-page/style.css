@@ -90,6 +90,64 @@ footer {
   }
 }
 
+/* Modal Styles */
+.button-reset {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(42rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  border: 0;
+  border-radius: 0.75rem;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.55);
+}
+
+.modal__inner {
+  padding: var(--token-spacing-lg);
+}
+
+.modal__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.modal__close {
+  flex-shrink: 0;
+}
+
+.modal-trigger {
+  margin-block-start: var(--token-spacing-sm);
+  padding: var(--token-spacing-sm);
+  color: var(--token-color-accent-mid);
+  text-decoration: underline;
+  border: 2px solid var(--token-color-accent-mid);
+}
+
+.modal-trigger:hover {
+  color: var(--token-color-accent-dark);
+  border-color: var(--token-color-accent-dark);
+}
+
+.modal-trigger:focus-visible {
+  outline: 2px solid var(--token-color-accent-mid);
+  outline-offset: 2px;
+}
+
 /* Breakpoint at 900px = 56.25em to */
 @media (width > 56.25em) {
   /* Page Layout */
