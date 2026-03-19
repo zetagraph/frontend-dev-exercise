@@ -137,5 +137,33 @@
         <p>Copyright and whatnot.</p>
       </div>
     </footer>
+    <script>
+      const modal = document.getElementById('more-information-modal');
+      const openButton = document.querySelector('[data-modal-open]');
+      const closeButton = document.querySelector('[data-modal-close]');
+
+      if (modal && openButton && closeButton) {
+        openButton.addEventListener('click', () => {
+          modal.showModal();
+        });
+
+        closeButton.addEventListener('click', () => {
+          modal.close();
+        });
+
+        modal.addEventListener('click', (event) => {
+          const rect = modal.getBoundingClientRect();
+          const clickedInDialog =
+            event.clientX >= rect.left &&
+            event.clientX <= rect.right &&
+            event.clientY >= rect.top &&
+            event.clientY <= rect.bottom;
+
+          if (!clickedInDialog) {
+            modal.close();
+          }
+        });
+      }
+    </script>
   </body>
 </html>
