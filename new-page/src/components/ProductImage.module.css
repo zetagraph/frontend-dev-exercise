@@ -1,0 +1,9 @@
+.productImage {
+  margin: 0;
+}
+
+.productImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
