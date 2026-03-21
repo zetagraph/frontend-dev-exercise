@@ -24,6 +24,40 @@ body {
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.08);
 }
 
+.product-summary {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.product-purchase-slot {
+  order: 1;
+}
+
+.product-review-slot {
+  order: 2;
+}
+
+@media (min-width: 721px) {
+  .product-details {
+    padding-top: 2.5rem;
+  }
+
+  .product-summary {
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .product-purchase-slot {
+    order: 2;
+    margin-top: -6.5rem;
+  }
+
+  .product-review-slot {
+    order: 1;
+  }
+}
+
 .srOnly {
   position: absolute;
   width: 1px;
