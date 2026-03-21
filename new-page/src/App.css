@@ -16,6 +16,14 @@ body {
   margin-inline: auto;
 }
 
+.product-details {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: var(--color-white);
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.08);
+}
+
 .srOnly {
   position: absolute;
   width: 1px;
