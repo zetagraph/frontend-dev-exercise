@@ -1,5 +1,5 @@
 .user {
-  padding: 3rem 1rem 2rem;
+  padding: 3rem 0 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: 720px) {
-.user {
-    padding: 1.5rem 1rem;
+  .user {
+    padding: 1.5rem 0;
   }
 }
