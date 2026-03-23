@@ -1,55 +1,54 @@
-# silverorange Frontend Developer Exercise
+# Implementation Notes
 
-This exercise is designed to assess how you approach tasks representative of
-the front-end developer role at silverorange. We are as interested in your
-process as we are in the final results. **Please use descriptive Git commit
-messages, and include comments where you think your code may be unclear.**
+Thanks for taking the time to review this.
 
-## 1 - Update Existing Page
+## Overview
 
-With the provided static page in the `/existing-page` folder, make the following
-changes. No mockups are provided, use your judgement and the base styles
-provided in `style.css`. The implementation should use
-[newly available baseline support](https://web-platform-dx.github.io/web-features/):
+The work is split into two parts:
 
-1. Move the main and aside content into a two-column layout at larger screen
-   sizes. At a minimum, the aside content should be 300px wide and the main
-   content should be 500px wide. The footer should always remain at the bottom
-   of the viewport.
+- Existing page updates  
+- New page (React)
 
-2. Move _Show more information_ section into a modal. Use accent colors to
-   style the trigger for this modal, which should have accessible name
-   _Show more information_.
+I organized things into two PRs to show how I’d normally work — building things up in small steps instead of one big commit.
 
-**BONUS**: add light/dark mode (according to system or user agent-level preference)
+## Approach
 
-## 2 - Build Out New Page
+Given the time limit, I focused on:
 
-Using the provided Vite application base in the `/new-page` folder, implement
-the page from the Figma file sent to you via email.
+- Keeping things simple and readable  
+- Making sure the layout works well across screen sizes  
+- Using semantic HTML where it made sense  
+- Showing progress clearly through commits  
 
-If you create a free Figma account, you’ll have access to export assets and
-inspect details in the mockup.
+## Key Decisions
 
-For this exercise we are just interested in replicating the visual appearance
-of the mockup—**no functionality is required**. [Widely available baseline support](https://web-platform-dx.github.io/web-features/) is expected.
+- Broke the work into smaller steps (layout → styling → components → cleanup)  
+- Kept components fairly lightweight instead of abstracting too early  
+- Tried to balance speed with code clarity  
 
-A basic responsive template is included in the project to get you started.
+## Accessibility
 
-If you are comfortable with React and Typescript, you can split the page into components, but this is not a requirement.
+- Used semantic elements where possible  
+- Made sure interactive elements can be used with a keyboard  
+- Added visible focus states  
+- Paid attention to accessible naming where relevant  
 
-If you would prefer a JavaScript version of this exercise, please let us know.
+## If I had more time
 
-### Running and Testing the New Page
+- Clean up spacing / polish a bit more  
+- Handle more edge cases  
+- Add some basic tests  
+- Possibly refactor for more reuse where it makes sense  
 
-```sh
-cd new-page/
-pnpm install
-pnpm dev
-```
+## AI Usage
 
-The page will hot-reload as you save changes.
+I used AI (Codex) a bit to sanity-check parts of the implementation and catch small issues, but the code and decisions are my own.
 
-## Environment
+## How to review
 
-For this exercise, Vite requires Node.js version 20.19+, 22.12+.
+You can start with the PRs to see how things evolved:
+
+- PR #1 — existing page  
+- PR #2 — new page  
+
+Then check the final state in the main branch.
